@@ -3,6 +3,7 @@ import './App.css';
 
 import NavigationBar from "./components/NavigationBar";
 import Dashboard from "./components/Dashboard";
+import Login from "./components/Login";
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
@@ -14,6 +15,7 @@ function App() {
         <div className="container">
           <Routes>
             <Route path="/" element={<Dashboard />}></Route>
+            <Route path="/sign-in" element={<Login />} />
           </Routes>
         </div>
       </Router>

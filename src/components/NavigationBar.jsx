@@ -8,10 +8,9 @@ class NavigationBar extends Component {
             <div>
                 <Navbar bg="dark" variant="dark" className="navbar-brand">
                     <Container>
-                        <Navbar.Brand href="#home">Primes Pronounce</Navbar.Brand>
+                        <Navbar.Brand href="/">Primes Pronounce</Navbar.Brand>
                         <Nav>
-                            <Nav.Link href="#Register">Register</Nav.Link>
-                            <Nav.Link href="#Login">Login</Nav.Link>
+                            <Nav.Link href="/sign-in">Login</Nav.Link>
                         </Nav>
                     </Container>
                 </Navbar>
