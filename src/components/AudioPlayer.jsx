@@ -9,7 +9,7 @@ function AudioPlayer() {
 
   return (
     < div >
-      <button onClick={start}>Hear Name</button>
+      <button onClick={start} className="btn btn-primary">Hear Name</button>
     </div >
   );
 }
