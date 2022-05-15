@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import { useState } from 'react';
+import React from 'react';
 import { useNavigate } from "react-router-dom";
 
 import { Navbar, Nav, Container } from "react-bootstrap";
@@ -7,14 +6,14 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 function NavBar(props) {
 
     let navigate = useNavigate();
-    const [loggedIn, setLoggedIn] = useState(props.LOGGED_IN);
+
     function logout(e) {
-        setLoggedIn(false);
+        props.setValidUser(false);
         sessionStorage.clear();
         navigate("/")
     }
 
-    if(loggedIn){
+    if (props.validUser) {
         return (
             <div>
                 <Navbar bg="dark" variant="dark" className="navbar-brand">
@@ -26,7 +25,7 @@ function NavBar(props) {
                     </Container>
                 </Navbar>
             </div>
-        ); 
+        );
     }
     return (
         <div>

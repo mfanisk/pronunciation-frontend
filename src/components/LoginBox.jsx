@@ -5,9 +5,9 @@ import LoginService from '../services/LoginService';
 
 LoginBox.propTypes = {
     setToken: PropTypes.func.isRequired
-  }
+}
 
-function  LoginBox(props) {
+function LoginBox(props) {
 
 
     const [email, setEmail] = useState("");
@@ -26,11 +26,13 @@ function  LoginBox(props) {
 
     function login(e) {
         e.preventDefault();
-
         let credentials = { email: email, password: password };
         LoginService.userLogin(credentials).then(res => {
             let token = res.data.accessToken;
             props.setToken(token);
+            if(token === "Valid"){
+                props.setValidUser(true)
+            }
             navigate("/")
         });
     }
