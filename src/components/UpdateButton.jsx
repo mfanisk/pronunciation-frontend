@@ -9,7 +9,9 @@ class UpdateButton extends Component {
             <div>
                 <Form.Group controlId="formFile" className="mb-3">
                     <Form.Control type="file" />
-                    <Form.Control type="submit"/>
+                    <Button variant="success" type="submit" >
+                        Submit
+                    </Button>
                 </Form.Group>
             </div>
         );

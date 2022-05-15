@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 
 import { Table, InputGroup, FormControl, Button } from "react-bootstrap";
-
+import AudioPlayer from "./AudioPlayer";
 
 class UsersList extends Component {
     render() {
@@ -31,19 +31,19 @@ class UsersList extends Component {
                             <td>Username1</td>
                             <td>First Name</td>
                             <td>Last Name</td>
-                            <td>Audio File</td>
+                            <td><AudioPlayer /></td>
                         </tr>
                         <tr>
                             <td>Username2</td>
                             <td>First Name</td>
                             <td>Last Name</td>
-                            <td>Audio File</td>
+                            <td><AudioPlayer /></td>
                         </tr>
                         <tr>
                             <td>Username3</td>
                             <td>First Name</td>
                             <td>Last Name</td>
-                            <td>Audio File</td>
+                            <td><AudioPlayer /></td>
                         </tr>
                     </tbody>
                 </Table>
