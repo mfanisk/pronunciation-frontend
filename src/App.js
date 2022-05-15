@@ -17,7 +17,7 @@ function App() {
         <NavBar validUser={validUser} setValidUser={setValidUser} />
         <div className="container">
           <Routes>
-            <Route path="/" element={<Dashboard />}></Route>
+            <Route path="/" element={<Dashboard validUser={validUser}/>}></Route>
             <Route path="/sign-in" element={<LoginBox setToken={setToken} setValidUser={setValidUser} />} />
           </Routes>
         </div>
