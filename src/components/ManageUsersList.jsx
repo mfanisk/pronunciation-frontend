@@ -4,6 +4,7 @@ import { Table, InputGroup, FormControl, Button  } from "react-bootstrap";
 
 import UpdateButton from "./UpdateButton";
 import DeleteButton from "./DeleteButton";
+import AudioPlayer from "./AudioPlayer";
 
 class ManageUsersList extends Component {
     render() {
@@ -34,7 +35,7 @@ class ManageUsersList extends Component {
                             <td>Username1</td>
                             <td>First Name</td>
                             <td>Last Name</td>
-                            <td>Pronounciation Audio File</td>
+                            <td><AudioPlayer /></td>
                             <td><UpdateButton /></td>
                             <td><DeleteButton /></td>
                         </tr>
@@ -42,7 +43,7 @@ class ManageUsersList extends Component {
                             <td>Username2</td>
                             <td>First Name</td>
                             <td>Last Name</td>
-                            <td>Audio File</td>
+                            <td><AudioPlayer /></td>
                             <td><UpdateButton /></td>
                             <td><DeleteButton /></td>
                         </tr>
@@ -50,7 +51,7 @@ class ManageUsersList extends Component {
                             <td>Username3</td>
                             <td>First Name</td>
                             <td>Last Name</td>
-                            <td>Audio File</td>
+                            <td><AudioPlayer /></td>
                             <td><UpdateButton /></td>
                             <td><DeleteButton /></td>
                         </tr>
@@ -58,7 +59,7 @@ class ManageUsersList extends Component {
                             <td>Username4</td>
                             <td>First Name</td>
                             <td>Last Name</td>
-                            <td>Audio File</td>
+                            <td><AudioPlayer /></td>
                             <td><UpdateButton /></td>
                             <td><DeleteButton /></td>
                         </tr>

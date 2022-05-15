@@ -4,6 +4,7 @@ import { Table } from "react-bootstrap";
 
 import UpdateButton from "./UpdateButton";
 import DeleteButton from "./DeleteButton";
+import AudioPlayer from "./AudioPlayer";
 
 class Profile extends Component {
     render() {
@@ -25,7 +26,7 @@ class Profile extends Component {
                             <td>Username</td>
                             <td>My First Name</td>
                             <td>My Last Name</td>
-                            <td>My Pronounciation Audio File</td>
+                            <td><AudioPlayer /></td>
                             <td><UpdateButton /></td>
                             <td><DeleteButton /></td>   
                         </tr>

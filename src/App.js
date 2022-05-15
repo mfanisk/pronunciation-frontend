@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <NavigationBar />
+        <NavigationBar token={token}/>
         <div className="container">
           <Routes>
             <Route path="/" element={<Dashboard />}></Route>
